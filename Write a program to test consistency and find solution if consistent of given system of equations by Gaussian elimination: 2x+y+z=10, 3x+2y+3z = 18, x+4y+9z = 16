@@ -1,0 +1,14 @@
+kill(all)$
+linsolve_params:false$
+EQ:[2*x+y+z=10,3*x+2y+3*z=18,x+4*y+9*z=16]$
+X:[x,y,z]$
+S:linsolve(EQ,X)$
+print("Given System of Equations is")$
+while EQ # [] do disp(pop(EQ))$
+if length(S)=0 then
+print("Given system has no solution")
+elseif length(S)=length(X) then
+print("Given system has unique solution") and
+ print(" Required solution is",S)
+ else print("Given system has infinite solutions") and 
+print("Required solution is", S)$
