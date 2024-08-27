@@ -1,0 +1,13 @@
+kill(all)$
+fpprintprec:7$
+define(f(x),x*sin(x)+cos(x))$
+define(g(x),x-f(x)/diff(f(x),x))$
+x[0]:π$
+x[i]:=float(g(x[i-1]))$
+n:4$
+print("Given equation is",f(x)=0)$
+print("Initial Approximation is ",'x[0]=x[0])$
+N:[["Iteration No.","Approximate root x","f(x)"]]$
+for i:1 thru n do N:push([i,x[i],f(x[i])],N)$
+table_form(reverse(N))$
+print("Approximate root by Newton's Method is x=",x[n])$
