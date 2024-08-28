@@ -1,6 +1,6 @@
 kill(all)$
 linsolve_params:false$
-EQ:[2*x+y+z=10,3*x+2y+3*z=18,x+4*y+9*z=16]$
+EQ:[2*x+y+z=10,3*x+2*y+3*z=18,x+4*y+9*z=16]$
 X:[x,y,z]$
 S:linsolve(EQ,X)$
 print("Given System of Equations is")$
