@@ -1,27 +1,15 @@
 kill(all)$
-
 numer:true$
-
 fpprintprec:7$
-
-f(x):=2*x-log(x)/log(10)-75
-
+f(x):=2*x-log(x)/log(10)-7$
 a:3.5$
-
 b:4$
-
 n:5$
-
 x[i]:=(a*f(b)-b*f(a))/(f(b)-f(a))S
-
 print("Given equation is", f(x)=0)$
-
 print("Given interval is (",a, ",",b,")")$
-
 N:[["lteration No.", "Approximate root x", "f(x)"]]$
 for i:1 thru n do (block(if f(a)-f(x[i])<0 then b:x[i]
-
 elseif f(b)-f(x[i])<0 then a:x[i]), N:push([i,x[i],f(x[i])],N))$
-
 table_form(reverse(N))$
 print("Approximate root by Regula-Falsi Method is x=",x[n])$
