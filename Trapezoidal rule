@@ -1,24 +1,14 @@
 kill(all)$
-
 fpprintprec:5$
 X:[5,6,7,8,9,10]$
 I:[196,394,686,1090,1624,2306]$
 a:first(X)$
-
 b:last(X)$
-
 h:abs(first(X)-second(X))$
-
 I:h/2*[1,2,2,2,2,1].Y$
-
 print("Data Table for integration is")$
-
 X:push("x",X)$
-
 Y:push("y",Y)$
-
 table_form([X,Y])$
-
 print("By Trapezoidal rule ")$
-
 'integrate(f(x),x,a,b)=I;
