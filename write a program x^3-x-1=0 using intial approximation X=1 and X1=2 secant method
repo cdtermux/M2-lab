@@ -1,0 +1,15 @@
+Program: write a program x^3-x-1=0 using intial approximation X=1 and X1=2 secant method
+
+kill(all)$
+fpprintprec:7$
+f(x):=x^3-x-1$
+x[0]:1$
+x[1]:2$
+x[i]:=float((x[i-2]*f(x[i-1])-x[i-1]*f(x[i-2]))/(f(x[i-1])-f(x[i-2])))$
+n:8$
+print("Given equation is",f(x)=0)$
+print("Initial Approximations are ",'x[0]=x[0],"and",'x[1]=x[1])$
+N:[["Iteration No.","Approximate root x","f(x)"]]$
+for i:2 thru n do (N:push([i-1,x[i],f(x[i])],N))$
+table_form(reverse(N))$
+print("Approximate root by Secant Method is x=",x[n])$
