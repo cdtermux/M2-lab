@@ -1,27 +1,14 @@
 kill(all)$
-
 fpprintprec:5$
-
-X:[0.0, 0.5, 1.0, 1.5, 2.0]$
-
-Y:[0.399, 0.352, 0.242, 0.129, 0.054]$
-
+X:[0.0,0.5,1.0,1.5,2.0]$
+Y:[0.399,0.352,0.242,0.129,0.054]$
 a:first(X)$
-
 b:last(X)$
-
 h:abs(first(X)-second(X))$
-
 I:h/3*[1,4,2,4,1].Y$
-
 print("Given Data Table is")$
-
 X:push("x",X)$
-
 Y:push("y",Y)$
-
 table_form([X,Y])$
-
 print("By Simpson's 1/3 rd rule")$
-
 'integrate(f(x),x,a,b)=I;
