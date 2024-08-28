@@ -1,14 +1,35 @@
+Write a program to test consistency and find solution if consistent of given system 
+
+of equations by Gaussian elimination:
+
+2𝑥 + 𝑦 + 𝑧 = 10, 3𝑥 + 2𝑦 + 3𝑧 = 18, 𝑥 + 4𝑦 + 9𝑧 = 16
+
+Program: 
+
 kill(all)$
+
 linsolve_params:false$
-EQ:[2*x+y+z=10,3*x+2y+3*z=18,x+4*y+9*z=16]$
+
+EQ:[2*x+y+z=10,3*x+2*y+3*z=18,x+4*y+9*z=16]$
+
 X:[x,y,z]$
+
 S:linsolve(EQ,X)$
-print("Given System of Equations is")$
-while EQ # [] do disp(pop(EQ))$
-if length(S)=0 then
-print("Given system has no solution")
-elseif length(S)=length(X) then
-print("Given system has unique solution") and
- print(" Required solution is",S)
- else print("Given system has infinite solutions") and 
-print("Required solution is", S)$
+
+print(“Given System of Equations is”)$
+
+while EQ # [ ] do disp(pop(EQ))$
+
+if length(S)=0 then 
+
+print(“Given system has no solution”)
+
+elseif length(S)=length(X) then 
+
+print(“Given system has unique solution”) and
+
+print(“ Required solution is”,S)
+
+else print(“Given system has infinite solutions”) and
+
+print(“ Required solution is”,S)$
