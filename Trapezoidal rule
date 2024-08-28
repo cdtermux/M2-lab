@@ -10,5 +10,5 @@ print("Data Table for integration is")$
 X:push("x",X)$
 Y:push("y",Y)$
 table_form([X,Y])$
-print("By Trapezoidal rule ")$
+print("By Trapezoidal rule")$
 'integrate(f(x),x,a,b)=I;
