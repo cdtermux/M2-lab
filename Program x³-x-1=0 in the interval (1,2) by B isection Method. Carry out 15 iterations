@@ -6,9 +6,9 @@ a:1$
 b:2$
 x[i]:=float((a+b)/2)$
 n:12$
-print("Given equation is", f(x)=0)$
-print("Given interval is (",a, ",",b,")")$
-N:[["Iteration No.","Approximate root x", "f(x)"]]$
+print("Given equation is",f(x)=0)$
+print("Given interval is (",a,",",b,")")$
+N:[["Iteration No.","Approximate root x","f(x)"]]$
  for i:1 thru n do (block(if f(a)*f(x[i])<0 then b:x[i]
 elseif f(b)*f(x[i])<0 then a:x[i]),N:push([i,x[i],f(x[i])],N))$
 table_form(reverse(N))$
